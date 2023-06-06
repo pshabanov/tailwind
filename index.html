@@ -9,18 +9,72 @@
     <title>Title</title>
 </head>
 <body>
+<!-- Header -->
 <header>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-    <a class="uppercase font-bold text-purple-800" href="#">webDev!</a>
-    <nav>
-        <ul class="text-gray-500 font-semibold">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Company</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
+    <section class="border-b border-b-gray-400">
+        <a class="uppercase font-bold text-purple-800" href="#">webDev!</a>
+        <nav>
+            <ul class="text-gray-500 font-semibold">
+                <li><a class="header__link" href="#">Home</a></li>
+                <li><a class="header__link" href="#">News</a></li>
+                <li><a class="header__link" href="#">Tech</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <button class="header__button">Login</button>
+                </li>
+                <li>
+                    <button class="header__button">Register</button>
+                </li>
+            </ul>
+        </nav>
+    </section>
 </header>
+<main>
+    <!-- Breadcrumbs -->
+    <section>
+        <div class="py-4 overflow-y-auto whitespace-nowrap">
+            <a href="#" class="text-gray-500 hover:text-gray-900 transition">Home</a>
+            <span class="mx-2 text-gray-500">&gt;</span>
+            <a href="#" class="text-gray-500 hover:text-gray-900 transition">News</a>
+            <span class="mx-2 text-gray-500">&gt;</span>
+            <a href="#" class="text-gray-500 hover:text-gray-900 transition">Tech</a>
+        </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section>
+        <h5 class="font-bold text=lg uppercase text-gray-700">Subscribe</h5>
+        <div>
+            <label class="text-gray-600 mb-4" for="email">Subscribe to our newsletter</label>
+            <input id="email" name="email" type="email" placeholder="example@email.com">
+        </div>
+    </section>
+</main>
+
+<footer class="border-t mt-10 py-10 px-2">
+    <section>
+        <div>
+            <div class="mb-5">
+                <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
+                <ul>
+                    <li><a class="footer__link" href="#">Team</a></li>
+                    <li><a class="footer__link" href="#">Company</a></li>
+                    <li><a class="footer__link" href="#">About Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h6 class="font-semibold text-gray-700 mb-4">Content</h6>
+                <ul>
+                    <li><a class="footer__link decoration-gray-700 underline-offset-2" href="#">Block</a></li>
+                    <li><a class="footer__link decoration-gray-700 underline-offset-2" href="#">Policy</a></li>
+                    <li><a class="footer__link decoration-gray-700 underline-offset-2" href="#">Documents</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</footer>
+
 </body>
 </html>
