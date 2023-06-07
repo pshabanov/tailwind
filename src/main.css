@@ -8,9 +8,6 @@
     }
 }
 
-section {
-    @apply mx-10 py-5
-}
 
 .header__link {
     @apply inline-block py-3 px-2 border-b-2 border-transparent hover:text-purple-800 hover:border-purple-800 transition;
@@ -25,4 +22,16 @@ section {
 
 input{
     @apply text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-500;
+}
+
+.pagination li a {
+    @apply inline-block py-1 px-3 border border-gray-500 text-gray-500 hover:bg-gray-100 hover:text-gray-900 transition
+}
+
+.pagination li a.__active {
+    @apply text-blue-600 hover:text-blue-100 hover:bg-transparent hover:text-blue-600
+}
+
+.post__title {
+    @apply mt-3 mb-2 text-gray-700 font-bold text-2xl;
 }
